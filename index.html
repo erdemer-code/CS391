@@ -20,21 +20,16 @@
           <div class="slider-tab"></div>
         </div>
         <div class="form-inner">
-          <form action="#" class="login">
+          <form action="#" class="login" >
             <div class="field">
-              <input type="text" placeholder="Email Address" required />
+              <input id ="emailLogIn" type="text" placeholder="Email Address" required />
             </div>
             <div class="field">
-              <input type="password" placeholder="Password" required />
-            </div>
-            <div class="icon-link">
-                <i class="fab fa-google fa-lg icons"></i>
-                <i class="fab fa-facebook fa-lg icons"></i>
-                <i class="fab fa-twitter fa-lg icons"></i>
+              <input id ="passwordLogIn"type="password" placeholder="Password" required />
             </div>
             <div class="field btn">
               <div class="btn-layer"></div>
-              <input type="submit" value="Login" />
+              <input type="submit" value="Login" onclick="login()" />
             </div>
             <div class="signup-link">
               Not a member? <a href="">Signup now</a>
@@ -42,23 +37,22 @@
           </form>
           <form action="#" class="signup">
             <div class="field">
-              <input type="text" placeholder="Email Address" required />
+              <input id="emailSignUp" type="text" placeholder="Email Address" required />
             </div>
             <div class="field">
-              <input type="password" placeholder="Password" required />
+              <input id="passwordSignUp" type="password" placeholder="Password" required />
             </div>
             <div class="field">
-              <input type="password" placeholder="Confirm password" required />
+              <input id="confirmPasswordSignUp" type="password" placeholder="Confirm password" required />
             </div>
             <div class="field btn">
               <div class="btn-layer"></div>
-              <input type="submit" value="Signup" />
+              <input type="submit" value="Signup" onclick="addUserToLocal()" />
             </div>
           </form>
         </div>
       </div>
     </div>
     <script src="index.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
   </body>
 </html>

@@ -71,9 +71,7 @@ html,body{
   background: -webkit-linear-gradient(left, #d1f6c1, #45b7b7);
   transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
-.icons{
-    margin: 20px;
-}
+
 input[type="radio"]{
   display: none;
 }
@@ -134,15 +132,11 @@ input[type="radio"]{
 form .field input:focus::placeholder{
   color: #b3b3b3;
 }
-.form-inner form .icon-link{
-  margin-top: 5px;
-  text-align: center;
-}
+
 .form-inner form .signup-link{
   text-align: center;
   margin-top: 30px;
 }
-.form-inner form .icon-link i:hover,
 .form-inner form .signup-link a{
   color: #45b7b7;
   text-decoration: none;
