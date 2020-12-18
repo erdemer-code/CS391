@@ -1,0 +1,33 @@
+label {
+	display: block;
+	text-align: left;
+	padding: 15px;
+}
+
+.questionForm {
+	width: 40%;
+	margin: 50px auto 0;
+	text-align: center;
+	padding: 0px;
+}
+
+button {
+	display: inline-block; 
+	width: 40%;
+	margin: 5% 0 5% 0;
+	font-size: 90%;
+}
+.answerValue{
+	font-size: 110%;
+}
+
+#questionNumber{
+	text-align: center;
+}
+
+header,footer{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+  }
