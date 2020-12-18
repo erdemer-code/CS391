@@ -22,6 +22,7 @@ function addUserToLocal() {
     var passwordInput = document.getElementById("passwordSignUp");
     var confirmPasswordInput = document.getElementById("confirmPasswordSignUp");
     var counter = 0;
+    if(checkMinimumLength(passwordInput.value)){
     if (passwordInput.value === confirmPasswordInput.value) {
       if (localStorage.getItem("counter") === null) {
         localStorage.setItem("counter", counter);
@@ -40,9 +41,23 @@ function addUserToLocal() {
       document.querySelector(".form-inner .signup").action = "mainPage.html"
     } else {
       alert("Your passwords do not match. Please try again.");
+      confirmPasswordInput.value = ""
+      passwordInput.value = ""
+    
     }
+  }  
+}
+}
+
+function checkMinimumLength(password){
+  if (password.length < 6){
+    alert("Your password must be at least 6 characters.")
+    document.getElementById("emailSignUp").value = ""
+    document.getElementById("passwordSignUp").value = ""  
+    document.getElementById("confirmPasswordSignUp").value = ""
+    return false;
   } else {
-    alert("Sorry, your browser do not support local storage");
+    return true;
   }
 }
 
