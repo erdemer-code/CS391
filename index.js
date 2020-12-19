@@ -24,14 +24,15 @@ function addUserToLocal() {
     var nameInput = document.getElementById("nameSignUp")
     var surnameInput = document.getElementById("surnameSignUp")
     var counter = 0;
-    if(isExists(emailInput.value)){
-    if(checkMinimumLength(passwordInput.value)){
-    if (passwordInput.value === confirmPasswordInput.value) {
+    
       if (localStorage.getItem("counter") === null) {
         localStorage.setItem("counter", counter);
       } else {
         counter = localStorage.getItem("counter");
       }
+      if(isExists(emailInput.value)){
+        if(checkMinimumLength(passwordInput.value)){
+          if (passwordInput.value === confirmPasswordInput.value) {
       var userData = {
         user_name:nameInput.value,
         user_surname:surnameInput.value,
@@ -63,6 +64,7 @@ function addUserToLocal() {
 }
 
 function isExists(email){
+
   var counter = localStorage.getItem("counter")
   var checkArray = [];
   for (let i = 1; i <= counter; i++) {
@@ -77,7 +79,7 @@ function isExists(email){
           flag =  false;
         }
   }
-  if(flag) {
+  if(flag || counter == 0) {
     return true;
   } else {
     return false;
@@ -112,8 +114,6 @@ function login() {
         if(passwordInput.value === obj.user_password){
           flag = true;
           alert("Welcome!");
-          var currentUser = i + 1
-          localStorage.setItem("currentUser" , currentUser)
           document.querySelector(".form-inner .login").action = "mainPage.html"
         } else {
           alert("Your password is incorrect!")
