@@ -39,6 +39,13 @@
 			<label id="questionNumber"></label>
 		</form> 
 	</section>
+	<script type="text/javascript">
+		var login = localStorage.getItem('currentUser')
+
+		if (!login) {
+			window.location.href = "../index.html"
+		}
+	</script>
 	<script type="text/javascript" src="quiz.js"></script>
 </body>
 <footer>

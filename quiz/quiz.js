@@ -26,7 +26,7 @@ var correctAnswers = new Map();
 correctAnswers.set("q1","Ankara");
 correctAnswers.set("q2","6");
 correctAnswers.set("q3","Cheetah");
-correctAnswers.set("q4","Sean");
+correctAnswers.set("q4","Sean Connery");
 correctAnswers.set("q5","6");
 
 var questionString = ["a","b","c","d"];
@@ -93,7 +93,9 @@ function nextFunction() {
             localStorage.removeItem("q"+i.toString());
         }
         localStorage.setItem("Correct",correctNumber);
+        updateUser();
         alert("Test is Finished!");
+        location.href ="results.html";
         // document.getElementById("next-btn").action = "mainPage.html";
     }
     else {
@@ -118,4 +120,13 @@ function prevFunction() {
         currentPageIndex-=1;
         initPage();
     }
+}
+function updateUser() {
+    var counter = localStorage.getItem("currentUser")
+    var obj = localStorage.getItem("user"+counter)
+    obj = JSON.parse(obj)
+    obj.score = localStorage.getItem("Correct") / questions.size * 100
+    obj = JSON.stringify(obj)
+    localStorage.setItem("user"+counter.toString(), obj)
+    localStorage.removeItem("Correct")
 }
