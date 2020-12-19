@@ -20,6 +20,9 @@
     <table style="width:100%" border="1px solid black" id="result">
     
     </table>
+    
+    <p id=scores></p>
+    
     <p id="p/f" style="font-size: larger;"></p>
 
     <script type="text/javascript">
@@ -28,10 +31,15 @@
       obj = JSON.parse(obj)
       document.getElementById('mail').innerHTML = "User: " + obj.user_email
       var table = "<tr><th>Quiz Number</th><th>Score</th></tr>"
+      var highest=0;
       for(var i=0;i<obj.score.length;i++){
         table = table + "<tr><td>"+(i+1)+".Try</td><td>"+obj.score[i]+"</td></tr>"
+        if(obj.score[i]>highest){
+          highest=obj.score[i];
+        }
       }
       document.getElementById('result').innerHTML =table
+      document.getElementById('scores').innerHTML = "Highest Score: "+highest+"<br>Latest Score: "+obj.score[obj.score.length-1];
       if(obj.score[obj.score.length-1]>=50){
         document.getElementById('p/f').innerHTML="You Passed"
       }
