@@ -38,7 +38,7 @@ function addUserToLocal() {
         user_surname:surnameInput.value,
         user_email: emailInput.value,
         user_password: passwordInput.value,
-        score: 0,
+        score: [],
       }; 
       counter++;
       localStorage.setItem("user" + counter, JSON.stringify(userData));
