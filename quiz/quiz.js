@@ -125,7 +125,7 @@ function updateUser() {
     var counter = localStorage.getItem("currentUser")
     var obj = localStorage.getItem("user"+counter)
     obj = JSON.parse(obj)
-    obj.score = localStorage.getItem("Correct") / questions.size * 100
+    obj.score.push(localStorage.getItem("Correct") / questions.size * 100);
     obj = JSON.stringify(obj)
     localStorage.setItem("user"+counter.toString(), obj)
     localStorage.removeItem("Correct")
