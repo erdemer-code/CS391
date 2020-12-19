@@ -17,7 +17,9 @@
 
     
     <p id="mail"></p>
-    <p id="result"></p>
+    <table style="width:100%" border="1px solid black" id="result">
+    
+    </table>
     <p id="p/f" style="font-size: larger;"></p>
 
     <script type="text/javascript">
@@ -25,8 +27,12 @@
     	var obj = localStorage.getItem("user"+counter)
       obj = JSON.parse(obj)
       document.getElementById('mail').innerHTML = "User: " + obj.user_email
-      document.getElementById('result').innerHTML ="Score: " + obj.score
-      if(obj.score>=50){
+      var table = "<tr><th>Quiz Number</th><th>Score</th></tr>"
+      for(var i=0;i<obj.score.length;i++){
+        table = table + "<tr><td>"+(i+1)+".Try</td><td>"+obj.score[i]+"</td></tr>"
+      }
+      document.getElementById('result').innerHTML =table
+      if(obj.score[obj.score.length-1]>=50){
         document.getElementById('p/f').innerHTML="You Passed"
       }
       else{
