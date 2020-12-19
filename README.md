@@ -12,6 +12,6 @@ Repetition is an important element of learning, and one way to repeat content is
 Designing the mainPage.html and readme.md
 <h3>Emre Çelik:</h3>
 <h3>İsmail Erdem Er:</h3>
-
+Designing the registration page and its functionality
 <h2> Instructions to run </h2>
 Our project is deployed to web by using Github pages and accessible via link:
