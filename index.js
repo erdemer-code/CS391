@@ -112,6 +112,8 @@ function login() {
         if(passwordInput.value === obj.user_password){
           flag = true;
           alert("Welcome!");
+          var currentUser = i + 1
+          localStorage.setItem("currentUser" , currentUser)
           document.querySelector(".form-inner .login").action = "mainPage.html"
         } else {
           alert("Your password is incorrect!")
