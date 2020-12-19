@@ -29,7 +29,7 @@
     	var counter = localStorage.getItem("currentUser")
     	var obj = localStorage.getItem("user"+counter)
       obj = JSON.parse(obj)
-      document.getElementById('mail').innerHTML = "User: " + obj.user_email
+      document.getElementById('mail').innerHTML = "User email: " + obj.user_email
       var table = "<tr><th>Quiz Number</th><th>Score</th></tr>"
       var highest=0;
       for(var i=0;i<obj.score.length;i++){
