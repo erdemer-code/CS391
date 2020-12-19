@@ -30,7 +30,11 @@
         document.getElementById('p/f').innerHTML="You Passed"
       }
       else{
-        document.getElementById('p/f').innerHTML= "Try Again"
+        var button = document.createElement("button");
+        button.innerHTML = "Try Again";
+        document.getElementById('p/f').appendChild(button);
+        button.addEventListener("click",function(){
+        window.location.href="../mainPage.html"
       }
     </script>
   </body>
