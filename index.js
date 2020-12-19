@@ -21,7 +21,10 @@ function addUserToLocal() {
     var emailInput = document.getElementById("emailSignUp");
     var passwordInput = document.getElementById("passwordSignUp");
     var confirmPasswordInput = document.getElementById("confirmPasswordSignUp");
+    var nameInput = document.getElementById("nameSignUp")
+    var surnameInput = document.getElementById("surnameSignUp")
     var counter = 0;
+    if(isExists(emailInput.value)){
     if(checkMinimumLength(passwordInput.value)){
     if (passwordInput.value === confirmPasswordInput.value) {
       if (localStorage.getItem("counter") === null) {
@@ -30,10 +33,12 @@ function addUserToLocal() {
         counter = localStorage.getItem("counter");
       }
       var userData = {
+        user_name:nameInput.value,
+        user_surname:surnameInput.value,
         user_email: emailInput.value,
         user_password: passwordInput.value,
         score: 0,
-      }; // please add user updated score here !
+      }; 
       counter++;
       localStorage.setItem("user" + counter, JSON.stringify(userData));
       localStorage.setItem("counter", counter);
@@ -46,7 +51,37 @@ function addUserToLocal() {
     
     }
   }  
+} else {
+  alert("This user exists!")
+  emailInput.value = ""
+  passwordInput.value = ""
+  confirmPasswordInput.value = ""
+  nameInput.value = ""
+  surnameInput.value = ""
 }
+}
+}
+
+function isExists(email){
+  var counter = localStorage.getItem("counter")
+  var checkArray = [];
+  for (let i = 1; i <= counter; i++) {
+    checkArray.push(localStorage.getItem("user" + i));
+  }
+  var flag = false;
+  for (let i = 0; i < counter; i++) {
+    var obj = JSON.parse(checkArray[i]);
+        if(email !== obj.user_email){
+          flag =  true;
+        } else {
+          flag =  false;
+        }
+  }
+  if(flag) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function checkMinimumLength(password){
