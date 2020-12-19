@@ -1,109 +1,54 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App</title>
-  </head>
-  <header>
+	<title>Quiz</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<header>
     <a href="index.html">
-      <img src="choose.png" width="64px" height="64px" style="margin-left:15px" alt="logo">
+      <img src="../choose.png" width="64px" height="64px" style="margin-left:15px;" alt="logo">
     </a>
     <h2 style="text-align: center">Quiz App</h2>
-  </header>
-  <body>
-    <div class="wrapper">
-      <div class="title-text">
-        <div class="title login">Login Form</div>
-        <div class="title signup">Signup Form</div>
-      </div>
-      <div class="form-container">
-        <div class="slide-controls">
-          <input type="radio" name="slide" id="login" checked />
-          <input type="radio" name="slide" id="signup" />
-          <label for="login" class="slide login">Login</label>
-          <label for="signup" class="slide signup">Signup</label>
-          <div class="slider-tab"></div>
-        </div>
-        <div class="form-inner">
-          <form action="#" class="login">
-            <div class="field">
-              <input
-                id="emailLogIn"
-                type="email"
-                placeholder="Email Address"
-                required
-              />
-            </div>
-            <div class="field">
-              <input
-                id="passwordLogIn"
-                type="password"
-                placeholder="Password"
-                required
-              />
-            </div>
-            <div class="field btn">
-              <div class="btn-layer"></div>
-              <input type="submit" value="Login" onclick="login()" />
-            </div>
-            <div class="signup-link">
-              Not a member? <a href="">Signup now</a>
-            </div>
-          </form>
-          <form action="#" class="signup">
-            <div class="field">
-              <input
-                id="nameSignUp"
-                type="text"
-                placeholder="Name"
-                required
-              />
-            </div>
-            <div class="field">
-              <input
-                id="surnameSignUp"
-                type="text"
-                placeholder="Surname"
-                required
-              />
-            </div>
-            <div class="field">
-              <input
-                id="emailSignUp"
-                type="email"
-                placeholder="Email Address"
-                required
-              />
-            </div>
-            <div class="field">
-              <input
-                id="passwordSignUp"
-                type="password"
-                placeholder="Password"
-                required
-              />
-            </div>
-            <div class="field">
-              <input
-                id="confirmPasswordSignUp"
-                type="password"
-                placeholder="Confirm password"
-                required
-              />
-            </div>
-            <div class="field btn">
-              <div class="btn-layer"></div>
-              <input type="submit" value="Signup" onclick="addUserToLocal()" />
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <script src="index.js"></script>
-  </body>
-  <footer>
+</header>
+<body>
+	<section class="questionForm">
+		<div class="question" id = "question">
+			<h2></h2>
+		</div>
+		<form>
+			<label class="answerOption">
+				<input type="radio" name="answer" id="answer1">
+				<span class="answerValue" id="answer_1"></span>
+			</label>
+			<label class="answerOption">
+				<input type="radio" name="answer" id="answer2">
+				<span class="answerValue" id="answer_2"></span>
+			</label>
+			<label class="answerOption">
+				<input type="radio" name="answer" id="answer3">
+				<span class="answerValue" id="answer_3"></span>
+			</label>
+			<label class="answerOption">
+				<input type="radio" name="answer" id="answer4">
+				<span class="answerValue" id="answer_4"></span>
+			</label>
+			<button type="button" id="prev-btn" onclick="prevFunction()">Previous Question</button>
+			<button type="button" id="next-btn" onclick="nextFunction()">Next Question</button>
+			<label id="questionNumber"></label>
+		</form> 
+	</section>
+	<script type="text/javascript">
+		var login = localStorage.getItem('currentUser')
+
+		if (!login) {
+			window.location.href = "../index.html"
+		}
+	</script>
+	<script type="text/javascript" src="quiz.js"></script>
+</body>
+<footer>
     <p>© Copyright 2020 CS 391 Web Development Project</p>
-  </footer>
+</footer>
 </html>
