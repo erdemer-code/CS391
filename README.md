@@ -12,6 +12,7 @@ Designing the quiz page and its functionality
 <h3>Berkay Çelik:</h3>
 Designing the mainPage.html and readme.md
 <h3>Emre Çelik:</h3>
+Designing the results.html page and its functionality
 <h3>İsmail Erdem Er:</h3>
 Designing the registration page and its functionality
 <h2> Instructions to run </h2>
