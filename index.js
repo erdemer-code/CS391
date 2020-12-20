@@ -43,7 +43,8 @@ function addUserToLocal() {
       counter++;
       localStorage.setItem("user" + counter, JSON.stringify(userData));
       localStorage.setItem("counter", counter);
-      alert("Welcome!");
+      //alert("Welcome!");
+      login(emailInput,passwordInput)
       document.querySelector(".form-inner .signup").action = "mainPage.html"
     } else {
       alert("Your passwords do not match. Please try again.");
@@ -98,9 +99,11 @@ function checkMinimumLength(password){
   }
 }
 
-function login() {
-  var emailInput = document.getElementById("emailLogIn");
-  var passwordInput = document.getElementById("passwordLogIn");
+function login(emailInput,passwordInput) {
+  if(!emailInput){
+    var emailInput = document.getElementById("emailLogIn");
+    var passwordInput = document.getElementById("passwordLogIn");
+  }
   var checkArray = [];
   var counter = localStorage.getItem("counter");
   for (let i = 1; i <= counter; i++) {
