@@ -5,6 +5,7 @@ label {
 }
 
 .questionForm {
+	border-style: groove;
 	width: 40%;
 	margin: 50px auto 0;
 	text-align: center;
@@ -25,9 +26,6 @@ button {
 	text-align: center;
 }
 
-header,footer{
-    display: grid;
-    height: 100%;
-    width: 100%;
-    place-items: center;
-  }
+input[type="radio"]{
+	display: inline-block;
+}
