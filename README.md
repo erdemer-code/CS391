@@ -17,3 +17,4 @@ Designing the results.html page and its functionality
 Designing the registration page and its functionality
 <h2> Instructions to run </h2>
 Our project is deployed to web by using Github pages and accessible via link:
+https://erdemer-code.github.io/CS391/
