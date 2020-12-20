@@ -5,6 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
     <title>Quiz App</title>
+     <style type="text/css">
+    	button{
+		border-radius: 0;
+		border: 0;
+		cursor: pointer;
+		display: inline-block;
+		height: 2.85em;
+		line-height: 2.95em;
+		padding: 0 1.5em;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+		background-color: #34bdeb;
+
+		}
+		button:hover {
+			background-color: #3499eb;
+			transition: 200ms;
+		}
+		.container{
+			width: 400px;
+		}
+		@media only screen and (max-width: 600px) {
+			.container{
+				width: 80%;
+			}
+		}
+
+		#result{
+			background-color: #fafafa;
+		}
+		#result th{
+			background-color: #34bdeb;
+			text-align: left;
+			padding: 5px;
+		}
+		#result td{
+			text-align: left;
+			padding: 2px 5px;
+		}
+		#result tr:nth-child(odd) {
+		  background-color: #d3e4f2;
+		}
+
+
+
+    </style>
   </head>
   <header>
     <a href="../mainPage.html">
@@ -17,9 +65,11 @@
 
     
     <p id="mail"></p>
-    <table style="width:100%" border="1px solid black" id="result">
+    <div class="container">
+    	<table style="width:100%" border="1px solid black" id="result">
     
-    </table>
+    	</table>
+    </div>
     
     <p id=scores></p>
     
