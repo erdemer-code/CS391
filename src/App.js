@@ -1,6 +1,42 @@
 import "./App.css";
 import styled from "styled-components";
 import { AccountBox } from "./components/accountBox";
+import React from 'react'
+import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
+import MainPage from './components/mainPage'
+
+class App extends React.Component {
+
+  render() {
+    return (
+      <BrowserRouter>
+      <div className="menu">
+        <ul>
+          {/* <li>
+            <Link to="/mainPage">MainPage</Link>
+          </li> */}
+          {/* <li>
+            <Link to="/about">ABOUT</Link>
+          </li>
+          <li>
+            <Link to="/contact">CONTACT</Link>
+          </li> */}
+        </ul>
+        <Switch>
+          <Route exact path="/" component={RegisterPageComponent} />
+          <Route exact path="/mainPage" component={MainPage} />
+          {/* <Route exact path="/contact" component={Contact} /> */}
+          {/* <Route path="*" component={NotFound} /> */}
+        </Switch>
+      </div>
+
+    </BrowserRouter>
+    )
+  }
+}
+
+
+
 
 const AppContainer = styled.div`
   width: 100%;
@@ -11,7 +47,7 @@ const AppContainer = styled.div`
   justify-content: center;
 `;
 
-function App() {
+function RegisterPageComponent() {
   return (
     <AppContainer>
       <AccountBox />

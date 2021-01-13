@@ -7,6 +7,7 @@ import { SignupForm } from "./signupForm";
 
 const BoxContainer = styled.div`
   width: 320px;
+  margin-top:5%;
   min-height: 550px;
   display: flex;
   flex-direction: column;
