@@ -10,7 +10,7 @@ import {
 } from "./common";
 import { Marginer } from "../marginer";
 import { AccountContext } from "./accountContext";
-import {FormGroup,Label} from 'reactstrap'
+import { FormGroup, Label } from "reactstrap";
 
 export class SignupForm extends React.Component {
   constructor(props) {
@@ -22,6 +22,7 @@ export class SignupForm extends React.Component {
       confirm_password: "",
       flag: false,
       isMatched: false,
+      isAgreed: false,
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -29,7 +30,7 @@ export class SignupForm extends React.Component {
 
   handleInputChange(event) {
     let target = event.target;
-    let value = target.value;
+    let value = target.type === "checkbox" ? target.checked : target.value;
     let name = target.name;
 
     this.setState({
@@ -44,6 +45,8 @@ export class SignupForm extends React.Component {
     let email = this.state.email;
     let password = this.state.password;
     let confirmPassword = this.state.confirmPassword;
+    
+    
     var emails = [];
     axios.get("http://localhost:3000/users").then((resp) => {
       const data = resp.data;
@@ -59,11 +62,12 @@ export class SignupForm extends React.Component {
         }
       }
       if (
+        this.isAgreed.checked &&
         this.state.isMatched === false &&
         confirmPassword === password &&
         full_name !== "" &&
         email !== "" &&
-         password.length >= 6
+        password.length >= 6
       ) {
         axios
           .post("http://localhost:3000/users", {
@@ -82,11 +86,12 @@ export class SignupForm extends React.Component {
             console.log(error);
           });
       } else {
-        alert("Your registration is invalid! Please try again.");
+        alert("Your registration is invalid! Also, please checked our Terms & Conditions");
         this.full_name.value = "";
         this.email.value = "";
         this.password.value = "";
         this.confirm_password.value = "";
+        this.isAgreed.checked = false;
       }
     });
 
@@ -137,7 +142,17 @@ export class SignupForm extends React.Component {
             ref={(el) => (this.confirm_password = el)}
           />
         </FormContainer>
-        <FormCheckComponent/>
+        <FormGroup check style={{ marginTop: "15px", fontSize: "0.8em" }}>
+      <Label check>
+        <Input
+          type="checkbox"
+          style={{ height: "35px" }}
+          onChange={this.handleInputChange}
+          ref={(el) => (this.isAgreed = el)}
+        />
+        I agree Terms & Conditions
+      </Label>
+    </FormGroup>
         <Marginer direction="vertical" margin={10} />
         <SubmitButton type="submit" onClick={(e) => this.mySubmitHandler(e)}>
           Sign Up
@@ -152,16 +167,7 @@ export class SignupForm extends React.Component {
   }
 }
 
-function FormCheckComponent(){
-  return (
-    <FormGroup check style={{marginTop: "15px",fontSize:"0.8em"}}>
-    <Label check>
-      <Input type="checkbox" style={{height:"35px"}} />
-      I agree Terms & Conditions
-    </Label>
-  </FormGroup>
-  )
-}
+
 
 function BoldLinkComponent(props) {
   const { switchToSignin } = useContext(AccountContext);
