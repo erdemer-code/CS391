@@ -30,6 +30,7 @@ export const BoldLink = styled.span`
   margin: 0 4px;
 `;
 
+
 export const Input = styled.input`
   width: 100%;
   height: 42px;

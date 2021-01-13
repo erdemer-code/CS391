@@ -4,6 +4,7 @@ import { AccountBox } from "./components/accountBox";
 import React from 'react'
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
 import MainPage from './components/mainPage'
+import Footer from './components/footer'
 
 class App extends React.Component {
 
@@ -49,9 +50,15 @@ const AppContainer = styled.div`
 
 function RegisterPageComponent() {
   return (
+    <div>
     <AppContainer>
       <AccountBox />
+      <footer>
+    <Footer/>
+    </footer>
     </AppContainer>
+   
+</div>
   );
 }
 

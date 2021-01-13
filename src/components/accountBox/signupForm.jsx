@@ -10,6 +10,7 @@ import {
 } from "./common";
 import { Marginer } from "../marginer";
 import { AccountContext } from "./accountContext";
+import {FormGroup,Label} from 'reactstrap'
 
 export class SignupForm extends React.Component {
   constructor(props) {
@@ -136,6 +137,7 @@ export class SignupForm extends React.Component {
             ref={(el) => (this.confirm_password = el)}
           />
         </FormContainer>
+        <FormCheckComponent/>
         <Marginer direction="vertical" margin={10} />
         <SubmitButton type="submit" onClick={(e) => this.mySubmitHandler(e)}>
           Sign Up
@@ -148,6 +150,17 @@ export class SignupForm extends React.Component {
       </BoxContainer>
     );
   }
+}
+
+function FormCheckComponent(){
+  return (
+    <FormGroup check style={{marginTop: "15px",fontSize:"0.8em"}}>
+    <Label check>
+      <Input type="checkbox" style={{height:"35px"}} />
+      I agree Terms & Conditions
+    </Label>
+  </FormGroup>
+  )
 }
 
 function BoldLinkComponent(props) {
