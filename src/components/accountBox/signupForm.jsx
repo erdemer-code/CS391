@@ -100,7 +100,7 @@ export class SignupForm extends React.Component {
 
   render() {
     if (this.state.flag) {
-      return <Redirect to="/mainPage" />;
+      return <Redirect to="/home" />;
     }
     return (
       <BoxContainer>

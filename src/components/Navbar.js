@@ -27,7 +27,7 @@ class Navbar extends React.Component {
                     <div className="nav-button ml-auto">
                         <ul className="nav navbar-nav navbar-right">
                             <li>
-                            <Link to="/register"><button type="button" className="btn btn-custom navbar-btn btn-rounded waves-effect waves-light">Login/Logout NavbarJs içinde düzenlenecek</button></Link>
+                            <Link to="/"><button type="button" className="btn btn-custom navbar-btn btn-rounded waves-effect waves-light">Logout</button></Link>
                             </li>
                         </ul>
                     </div>

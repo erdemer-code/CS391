@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Quizzes from './components/Quizzes';
-import Descriptions from './components/Descriptions';
-import Team from './components/Team';
-import Footer from './components/Footer';
-import Aux from './hoc/Aux_';
+import Navbar from './Navbar';
+import Quizzes from './Quizzes';
+import Descriptions from './Descriptions';
+import Team from './Team';
+import Footer from './Footer';
+import Aux from '../hoc/Aux_';
 
 class Home extends React.Component {
   render() {

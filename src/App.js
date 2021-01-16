@@ -2,9 +2,9 @@ import "./App.css";
 import styled from "styled-components";
 import { AccountBox } from "./components/accountBox";
 import React from 'react'
-import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
-import MainPage from './components/mainPage'
-import Footer from './components/footer'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Home from './components/Home'
+
 
 class App extends React.Component {
 
@@ -12,20 +12,10 @@ class App extends React.Component {
     return (
       <BrowserRouter>
       <div className="menu">
-        <ul>
-          {/* <li>
-            <Link to="/mainPage">MainPage</Link>
-          </li> */}
-          {/* <li>
-            <Link to="/about">ABOUT</Link>
-          </li>
-          <li>
-            <Link to="/contact">CONTACT</Link>
-          </li> */}
-        </ul>
+    
         <Switch>
           <Route exact path="/" component={RegisterPageComponent} />
-          <Route exact path="/mainPage" component={MainPage} />
+          <Route exact path="/home" component={Home} />
           {/* <Route exact path="/contact" component={Contact} /> */}
           {/* <Route path="*" component={NotFound} /> */}
         </Switch>
@@ -53,9 +43,6 @@ function RegisterPageComponent() {
     <div>
     <AppContainer>
       <AccountBox />
-      <footer>
-    <Footer/>
-    </footer>
     </AppContainer>
    
 </div>
