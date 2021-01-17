@@ -28,7 +28,7 @@ https://erdemer-code.github.io/CS391/
 
 ## External Libraries
 <ul>
-  <li>Axios : </li>
+  <li>Axios : To get or post data from server (users.json) </li>
   <li>Reactstrap : Implement checkedbox in the Register Page </li>
   <li>json-server : To store users'data </li>
   <li>styled-components : To implement advanced design for Register Page & Login Page </li>
