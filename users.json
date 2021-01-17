@@ -37,5 +37,319 @@
       "password": "123456"
     }
   
-  ]
+  ],
+
+"quiz1": [
+  {
+    "id":1,
+    "questionText": "Which author and poet famously wrote the line, &quot;The female of the species is more deadly than the male&quot;",
+    "answerOptions": [
+      { "answer_id":1, "answerText": "Edgar Allan Poe", "isCorrect": false, "isSelected": false },
+      { "answer_id":1,"answerText": "William Shakespeare", "isCorrect": false, "isSelected": false },
+      { "answer_id":1,"answerText": "William Wordsworth", "isCorrect": false, "isSelected": false },
+      { "answer_id":1,"answerText": "Rudyard Kipling", "isCorrect": true, "isSelected": false }
+    ]
+  },
+  {
+    "id":2,
+    "questionText": "What does a funambulist walk on?",
+    "answerOptions": [
+      {"answer_id":2,"answerText": "A Tight Rope", "isCorrect": false, "isSelected": false },
+      { "answer_id":2,"answerText": "Broken Glass", "isCorrect": false, "isSelected": false },
+      { "answer_id":2,"answerText": "Ian Fleming", "isCorrect": true, "isSelected": false },
+      { "answer_id":2,"answerText": "The Moon", "isCorrect": false, "isSelected": false }
+    ]
+  },
+  {
+    "id":3,
+    "questionText": "What was the last message of the Dolphins in &quot;The Hitchhiker&#039;s Guide to the Galaxy&quot;?",
+    "answerOptions": [
+      { "answer_id":3,"answerText": "Land of the brave", "isCorrect": false, "isSelected": false },
+      { "answer_id":3,"answerText": "The answer is 42.", "isCorrect": false, "isSelected": false },
+      { "answer_id":3,"answerText": "So long, and thanks for all the fish.", "isCorrect": true, "isSelected": false },
+      { "answer_id":3,"answerText": "Goodbye cruel world! ", "isCorrect": false, "isSelected": false }
+    ]
+  }, 
+  {
+    "id":4,
+    "questionText": "Where does the book 'The Silence of the Lambs' get its title from?",
+    "answerOptions": [
+      { "answer_id":4,"answerText": "he main character's trauma in childhood", "isCorrect": false, "isSelected": false },
+      { "answer_id":4,"answerText": "The relation it has with killing the innocents", "isCorrect": false, "isSelected": false },
+      { "answer_id":4,"answerText": "The villain's favourite meal", "isCorrect": true, "isSelected": false },
+      { "answer_id":4,"answerText": "The voice of innocent people being shut by the powerful", "isCorrect": false, "isSelected": false }
+    ]
+  }, 
+  {
+    "id":5,
+    "questionText": "How many Harry Potter books are there?",
+    "answerOptions": [
+      { "answer_id":5,"answerText": "7", "isCorrect": true, "isSelected": false },
+      { "answer_id":5,"answerText": "8", "isCorrect": false, "isSelected": false },
+      { "answer_id":5,"answerText": "5", "isCorrect": false, "isSelected": false },
+      { "answer_id":5,"answerText":  "6", "isCorrect": false, "isSelected": false }
+    ]
+  }
+  ],
+  "quiz2": [
+    {
+      "id":1,
+      "questionText": "What was the name of the WWF professional wrestling tag team made up of the wrestlers Ax and Smash?",
+      "answerOptions": [
+        { "answer_id":1, "answerText": "Demolition", "isCorrect": false, "isSelected": false },
+        { "answer_id":1,"answerText": "The Dream Team", "isCorrect": false, "isSelected": false },
+        { "answer_id":1,"answerText": "The Bushwhackers", "isCorrect": true, "isSelected": false },
+        { "answer_id":1,"answerText": "The British Bulldogs", "isCorrect": false, "isSelected": false }
+      ]
+    },
+    {
+      "id":2,
+      "questionText": "What does a funambulist walk on?",
+      "answerOptions": [
+        {"answer_id":2,"answerText": "A Tight Rope", "isCorrect": false, "isSelected": false },
+        { "answer_id":2,"answerText": "Broken Glass", "isCorrect": false, "isSelected": false },
+        { "answer_id":2,"answerText": "Balls", "isCorrect": true, "isSelected": false },
+        { "answer_id":2,"answerText": "The Moon", "isCorrect": false, "isSelected": false }
+      ]
+    },
+    {
+      "id":3,
+      "questionText": "Which sign of the zodiac is represented by the Crab?",
+      "answerOptions": [
+        { "answer_id":3,"answerText": "Libra", "isCorrect": false, "isSelected": false },
+        { "answer_id":3,"answerText": "Virgo", "isCorrect": false, "isSelected": false },
+        { "answer_id":3,"answerText": "Cancer", "isCorrect": true, "isSelected": false },
+        { "answer_id":3,"answerText": "Sagittarius", "isCorrect": false, "isSelected": false }
+      ]
+    }, 
+    {
+      "id":4,
+      "questionText": "What does the * stand for in the abbreviation SIM, as in SIM card?",
+      "answerOptions": [
+        { "answer_id":4,"answerText": "Secure", "isCorrect": false, "isSelected": false },
+        { "answer_id":4,"answerText": "Single", "isCorrect": false, "isSelected": false },
+        { "answer_id":4,"answerText": "Subscriber", "isCorrect": true, "isSelected": false },
+        { "answer_id":4,"answerText": "Solid", "isCorrect": false, "isSelected": false }
+      ]
+    }, 
+    {
+      "id":5,
+      "questionText": "What do the letters of the fast food chain KFC stand for?",
+      "answerOptions": [
+        { "answer_id":5,"answerText": "Kentucky Fried Chicken", "isCorrect": true, "isSelected": false },
+        { "answer_id":5,"answerText": "Kentucky Fresh Cheese", "isCorrect": false, "isSelected": false },
+        { "answer_id":5,"answerText": "Kibbled Freaky Cow", "isCorrect": false, "isSelected": false },
+        { "answer_id":5,"answerText":  "Kiwi Food Cut", "isCorrect": false, "isSelected": false }
+      ]
+    }
+    ],
+    "quiz3": [
+      {
+        "id":1,
+        "questionText": "Which country does the band Rammstein hail from?",
+        "answerOptions": [
+          { "answer_id":1, "answerText": "Austria", "isCorrect": false, "isSelected": false },
+          { "answer_id":1,"answerText": "Armenia", "isCorrect": false, "isSelected": false },
+          { "answer_id":1,"answerText": "Germany", "isCorrect": true, "isSelected": false },
+          { "answer_id":1,"answerText": "Belgium", "isCorrect": true, "isSelected": false }
+        ]
+      },
+      {
+        "id":2,
+        "questionText": "Which of these artists was NOT a member of the electronic music supergroup Swedish House Mafia, which split up in 2013?",
+        "answerOptions": [
+          {"answer_id":2,"answerText": "Steve Angello", "isCorrect": false, "isSelected": false },
+          { "answer_id":2,"answerText": "Alesso", "isCorrect": true, "isSelected": false },
+          { "answer_id":2,"answerText": "Axwell", "isCorrect": true, "isSelected": false },
+          { "answer_id":2,"answerText": "Sebastian Ingrosso", "isCorrect": false, "isSelected": false }
+        ]
+      },
+      {
+        "id":3,
+        "questionText": "What was the title of Sakamoto Kyu's song &quot;Ue o Muite Arukou; (I Look Up As I Walk) changed to in the United States?",
+        "answerOptions": [
+          { "answer_id":3,"answerText": "Takoyaki", "isCorrect": false, "isSelected": false },
+          { "answer_id":3,"answerText": "Sushi", "isCorrect": false, "isSelected": false },
+          { "answer_id":3,"answerText": "Oden", "isCorrect": true, "isSelected": false },
+          { "answer_id":3,"answerText": "Sukiyaki", "isCorrect": true, "isSelected": false }
+        ]
+      }, 
+      {
+        "id":4,
+        "questionText": "Which of these is not a song on the album Graduation by Kanye West?",
+        "answerOptions": [
+          { "answer_id":4,"answerText": "I wonder", "isCorrect": false, "isSelected": false },
+          { "answer_id":4,"answerText": "Big Brother", "isCorrect": false, "isSelected": false },
+          { "answer_id":4,"answerText": "The Glory", "isCorrect": true, "isSelected": false },
+          { "answer_id":4,"answerText": "Waves", "isCorrect": true, "isSelected": false }
+        ]
+      }, 
+      {
+        "id":5,
+        "questionText": "The title of Adolf Hitler's autobiography 'Mein Kampf' is what when translated to English?",
+        "answerOptions": [
+          { "answer_id":5,"answerText": "My Struggle", "isCorrect": true, "isSelected": false },
+          { "answer_id":5,"answerText": "My Hatred", "isCorrect": false, "isSelected": false },
+          { "answer_id":5,"answerText": "My Sadness", "isCorrect": false, "isSelected": false },
+          { "answer_id":5,"answerText":  "Desire", "isCorrect": false, "isSelected": false }
+        ]
+      }
+      ],
+      "quiz4": [
+        {
+          "id":1,
+          "questionText": "Which of these plays was famously first performed posthumously after the playwright committed suicide?",
+          "answerOptions": [
+            { "answer_id":1, "answerText": "The Birthday Party", "isCorrect": false, "isSelected": false },
+            { "answer_id":1,"answerText": "Much Ado About Nothing", "isCorrect": false, "isSelected": false },
+            { "answer_id":1,"answerText": "4.48 Psychosis", "isCorrect": true, "isSelected": false },
+            { "answer_id":1,"answerText": "Hamilton", "isCorrect": false, "isSelected": false }
+          ]
+        },
+        {
+          "id":2,
+          "questionText": "Who serves as the speaker of the prologue in Shakespeare's Romeo and Juliet?",
+          "answerOptions": [
+            {"answer_id":2,"answerText": "Chorus", "isCorrect": false, "isSelected": false },
+            { "answer_id":2,"answerText": "Capulet", "isCorrect": false, "isSelected": false },
+            { "answer_id":2,"answerText": "Montague", "isCorrect": true, "isSelected": false },
+            { "answer_id":2,"answerText": "Refrain ", "isCorrect": false, "isSelected": false }
+          ]
+        },
+        {
+          "id":3,
+          "questionText": "The musical 'Dirty Rotten Scoundrels' is set in what country?",
+          "answerOptions": [
+            { "answer_id":3,"answerText": "Germany", "isCorrect": false, "isSelected": false },
+            { "answer_id":3,"answerText": "Sweden", "isCorrect": false, "isSelected": false },
+            { "answer_id":3,"answerText": "France", "isCorrect": true, "isSelected": false },
+            { "answer_id":3,"answerText": "USA", "isCorrect": false, "isSelected": false }
+          ]
+        }, 
+        {
+          "id":4,
+          "questionText": "In Macbeth, the eyes of what animals were used in the Witches' cauldron?",
+          "answerOptions": [
+            { "answer_id":4,"answerText": "Sharks", "isCorrect": false, "isSelected": false },
+            { "answer_id":4,"answerText": "Squids", "isCorrect": false, "isSelected": false },
+            { "answer_id":4,"answerText": "Newts", "isCorrect": true, "isSelected": false },
+            { "answer_id":4,"answerText": "Humans", "isCorrect": false, "isSelected": false }
+          ]
+        }, 
+        {
+          "id":5,
+          "questionText": "What is the name of Broadway&#039;s first &quot;long-run&quot; musical?",
+          "answerOptions": [
+            { "answer_id":5,"answerText": "The Elves", "isCorrect": true, "isSelected": false },
+            { "answer_id":5,"answerText": "Wicked", "isCorrect": false, "isSelected": false },
+            { "answer_id":5,"answerText": "Hamilton", "isCorrect": false, "isSelected": false },
+            { "answer_id":5,"answerText":  "The Book of Mormon", "isCorrect": false, "isSelected": false }
+          ]
+        }
+        ],
+        "quiz5": [
+          {
+            "id":1,
+            "questionText": "What was the name of the WWF professional wrestling tag team made up of the wrestlers Ax and Smash?",
+            "answerOptions": [
+              { "answer_id":1, "answerText": "David Duchovny", "isCorrect": true, "isSelected": false },
+              { "answer_id":1,"answerText": "Robert Patrick", "isCorrect": false, "isSelected": false },
+              { "answer_id":1,"answerText": "Mitch Pileggi", "isCorrect": true, "isSelected": false },
+              { "answer_id":1,"answerText": "X-Files", "isCorrect": false, "isSelected": false }
+            ]
+          },
+          {
+            "id":2,
+            "questionText": "What does a funambulist walk on?",
+            "answerOptions": [
+              {"answer_id":2,"answerText": "Prostate Cancer", "isCorrect": false, "isSelected": false },
+              { "answer_id":2,"answerText": "Lung Cancer", "isCorrect": true, "isSelected": false },
+              { "answer_id":2,"answerText": "Brain Cancer", "isCorrect": true, "isSelected": false },
+              { "answer_id":2,"answerText": "Testicular Cancer", "isCorrect": false, "isSelected": false }
+            ]
+          },
+          {
+            "id":3,
+            "questionText": "Which of the following was not an actor/actress on the American television show Saturday Night Live in Season 42?",
+            "answerOptions": [
+              { "answer_id":3,"answerText": "Mikey Day", "isCorrect": false, "isSelected": false },
+              { "answer_id":3,"answerText": "Sasheer Zamata", "isCorrect": false, "isSelected": false },
+              { "answer_id":3,"answerText": "Tina Fey", "isCorrect": true, "isSelected": false },
+              { "answer_id":3,"answerText": "Kate McKinnon", "isCorrect": false, "isSelected": false }
+            ]
+          }, 
+          {
+            "id":4,
+            "questionText": "What does the * stand for in the abbreviation SIM, as in SIM card?",
+            "answerOptions": [
+              { "answer_id":4,"answerText": "Double Dare", "isCorrect": true, "isSelected": false },
+              { "answer_id":4,"answerText": "Nickelodeon Guts", "isCorrect": false, "isSelected": false },
+              { "answer_id":4,"answerText": "Nick Arcade", "isCorrect": false, "isSelected": false },
+              { "answer_id":4,"answerText": "Double Dare", "isCorrect": false, "isSelected": false }
+            ]
+          }, 
+          {
+            "id":5,
+            "questionText": "Which former Coronation Street actress was once a hostess on the British Game Show Double Your Money?",
+            "answerOptions": [
+              { "answer_id":5,"answerText": "Sue Nicholls", "isCorrect": false, "isSelected": false },
+              { "answer_id":5,"answerText": "Violet Carson", "isCorrect": false, "isSelected": false },
+              { "answer_id":5,"answerText": "Jean Alexander", "isCorrect": false, "isSelected": false },
+              { "answer_id":5,"answerText":  "Amanda Barrie", "isCorrect": true, "isSelected": false }
+            ]
+          }
+          ],
+          "quiz6": [
+            {
+              "id":1,
+              "questionText": "Which of these is NOT a main playable character in 'Grand Theft Auto V' ?",
+              "answerOptions": [
+                { "answer_id":1, "answerText": "Lamar", "isCorrect": false, "isSelected": false },
+                { "answer_id":1,"answerText": "Trevor", "isCorrect": false, "isSelected": false },
+                { "answer_id":1,"answerText": "Michael", "isCorrect": true, "isSelected": false },
+                { "answer_id":1,"answerText": "Franklin", "isCorrect": false, "isSelected": false }
+              ]
+            },
+            {
+              "id":2,
+              "questionText": "What was the original name of Crash Bandicoot?",
+              "answerOptions": [
+                {"answer_id":2,"answerText": "Marvelous Mole", "isCorrect": false, "isSelected": false },
+                { "answer_id":2,"answerText": "Coco Bandicoot'", "isCorrect": false, "isSelected": false },
+                { "answer_id":2,"answerText": "Willie Wombat'", "isCorrect": true, "isSelected": false },
+                { "answer_id":2,"answerText": "Wally Wombat", "isCorrect": false, "isSelected": false }
+              ]
+            },
+            {
+              "id":3,
+              "questionText": "Which of the following is not a playable race in the MMORPG Guild Wars 2?",
+              "answerOptions": [
+                { "answer_id":3,"answerText": "Charr", "isCorrect": false, "isSelected": false },
+                { "answer_id":3,"answerText": "Sylvari", "isCorrect": false, "isSelected": false },
+                { "answer_id":3,"answerText": "Asura", "isCorrect": false, "isSelected": false },
+                { "answer_id":3,"answerText": "Tengu", "isCorrect": true, "isSelected": false }
+                
+              ]
+            }, 
+            {
+              "id":4,
+              "questionText": "In 'Final Fantasy VI', what is the name of (summoned) Gilgamesh's weakest attack?",
+              "answerOptions": [
+                { "answer_id":4,"answerText": "Excalipoor", "isCorrect": true, "isSelected": false },
+                { "answer_id":4,"answerText": "Excalibore", "isCorrect": false, "isSelected": false },
+                { "answer_id":4,"answerText": "Excalisnore", "isCorrect": false, "isSelected": false },
+                { "answer_id":4,"answerText": "Excalisore", "isCorrect": false, "isSelected": false }
+              ]
+            }, 
+            {
+              "id":5,
+              "questionText": "When was Pokemon GO released in North America?",
+              "answerOptions": [
+                { "answer_id":5,"answerText": "July 6th, 2016", "isCorrect": false, "isSelected": false },
+                { "answer_id":5,"answerText": "June 5th, 2016", "isCorrect": true, "isSelected": false },
+                { "answer_id":5,"answerText": "May 24th, 2016", "isCorrect": false, "isSelected": false },
+                { "answer_id":5,"answerText":  "January 2nd, 2017", "isCorrect": false, "isSelected": false }
+              ]
+            }
+            ]
 }
