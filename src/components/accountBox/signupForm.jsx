@@ -142,7 +142,7 @@ export class SignupForm extends React.Component {
             ref={(el) => (this.confirm_password = el)}
           />
         </FormContainer>
-        <FormGroup check style={{ marginTop: "15px", fontSize: "0.8em" }}>
+        <FormGroup check style={{ marginTop: "15px", fontSize: "0.8em", marginLeft : "-25px"}}>
       <Label check>
         <Input
           type="checkbox"
