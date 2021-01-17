@@ -16,8 +16,6 @@ Designing the results page and its functionality
 <h3>İsmail Erdem Er:</h3>
 Designing the registration page & login page and its functionality
 <h2> Instructions to run </h2>
-Our project is deployed to web by using Github pages and accessible via link:
-https://erdemer-code.github.io/CS391/
 
 ## User Guide
 <ol>
