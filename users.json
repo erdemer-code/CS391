@@ -35,8 +35,13 @@
       "full_name": "Fred Blair",
       "email": "freddyb34@gmail.com",
       "password": "123456"
+    },
+    {
+      "full_name": "Ahmet Hasan",
+      "email": "ahmet_hasan@gmail.com",
+      "password": "123456",
+      "id": 7
     }
-  
   ],
 
 "quiz1": [
@@ -352,4 +357,5 @@
               ]
             }
             ]
+  ]
 }
