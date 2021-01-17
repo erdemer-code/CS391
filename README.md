@@ -33,6 +33,7 @@ https://erdemer-code.github.io/CS391/
   <li>json-server : To store users'data </li>
   <li>styled-components : To implement advanced design for Register Page & Login Page </li>
   <li>framer-motion : To add animation for switching Register Page to Login Page or vice versa </li>
+  <li>aux : Allow us to return multiple JSX elements without adding extra layer </li>
 </ul>
 
 # Getting Started with Create React App
